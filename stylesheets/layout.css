@@ -1,0 +1,212 @@
+
+body {
+  background-image: url("../images/Fon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+#blue_bird {
+  width: 12vw;
+  height: 12vw;
+  position: relative;
+  top: 2vw; 
+  left: 84vw; 
+}
+#Blue2 {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -6vw; 
+  left: 84vw; 
+}
+
+#Bull_yellow {
+  width: 20vw;
+  height: 20vw;
+  position: relative;
+  top: 10vw;
+  left: 55vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Yellow {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -8vw; 
+  left: 75vw; 
+}
+
+#Deer {
+  position: relative;
+  top: -8vw;
+  left: -5vw;
+  width: 14vw;
+  height: 14vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Pink {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -23vw; 
+  left: 6vw; 
+}
+
+#Rabbit2 {
+  position: relative;
+  top: -35vw;
+  left: 40vw;
+  width: 25vw;
+  height: 25vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Brown {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -60vw; 
+  left: 53vw; 
+}
+
+#frog {
+  position: relative;
+  top: -34vw;
+  left: 75vw;
+  width: 12vw;
+  height: 12vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Green {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -43vw; 
+  left: 83vw; 
+}
+
+#Fish {
+  position: relative;
+  top: -45vw;
+  left: 37vw;
+  width: 10vw;
+  height: 10vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Orange {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -50vw; 
+  left: 36vw; 
+}
+
+#Rabbit1 {
+  position: relative;
+  top: -58vw;
+  left: 8vw;
+  width: 10vw;
+  height: 10vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Blue {
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -68vw; 
+  left: 10vw; 
+}
+
+
+/* модальное окошко */
+.first_modal, .second_modal, .third_modal, .fourth_modal, .fifth_modal, .sixth_modal, .seventh_modal  {
+  display: none; 
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+/* модальное окно для птицы */
+.first_modal_content{
+  background-image: url("../images/info6.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30vw auto;
+  padding: 2vw;
+  width: 55vw;
+  height: 28vw;
+  text-align: center;
+}
+/* модальное окно для бычка */
+ .second_modal_content{
+  background-image: url("../images/info1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30vw auto;
+  padding: 2vw;
+  width: 60vw;
+  height: 36vw;
+  text-align: center;
+}
+/* модальное окно для оленя */
+.third_modal_content{
+  background-image: url("../images/info3.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30vw auto;
+  padding: 2vw;
+  width: 40vw;
+  height: 33vw;
+  text-align: center;
+}
+/* модальное окно для коричневого зайца */
+.fourth_modal_content{
+  background-image: url("../images/info5.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30vw auto;
+  padding: 2vw;
+  width: 40vw;
+  height: 33vw;
+  text-align: center;
+}
+/* модальное окно для коричневого зайца */
+.fifth_modal_content{
+  background-image: url("../images/info7.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30vw auto;
+  padding: 2vw;
+  width: 60vw;
+  height: 33vw;
+  text-align: center;
+}
+/* модальное окно для оранжевой рыбы */
+.sixth_modal_content {
+  background-image: url("../images/info8.svg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30vw auto;
+  padding: 2vw;
+  width: 55vw; 
+  height: 28vw; 
+  text-align: center;
+}
+/* модальное окно для кролика русалки */
+.seventh_modal_content {
+  background-image: url("../images/info2.svg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30vw auto;
+  padding: 2vw;
+  width: 55vw; 
+  height: 44vw; 
+  text-align: center;
+}
