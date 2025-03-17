@@ -129,7 +129,7 @@ span7.onclick = function() {
     const frogSound = new Audio('sounds/frog.mp3'); 
     const fishSound = new Audio('sounds/fish.mp3'); 
     const rabbit1Sound = new Audio('sounds/rabbit1.mp3'); 
-
+   
 
     // Анимация и звук для птицы
     const bird = document.getElementById("blue_bird");
@@ -184,8 +184,8 @@ span7.onclick = function() {
         const birdRect = bird.getBoundingClientRect();
         
         gsap.to(deer, {
-            x: (birdRect.left - deerRect.left) * 0.25,
-            duration: 4.0,
+            x: (birdRect.left - deerRect.left) * 0.15,
+            duration: 1.0,
             ease: "power1.inOut",
             onComplete: function() {
                 setTimeout(() => {
@@ -217,6 +217,7 @@ span7.onclick = function() {
             });
     });
 
+    
     // Анимация и звук для лягушки
     const frog = document.getElementById("frog");
     frog.addEventListener('click', function() {
@@ -238,7 +239,32 @@ span7.onclick = function() {
                 ease: "bounce.out"
             });
 
+//  // Анимация и звук для рыбы
+// const fish = document.getElementById("Fish");
+// fish.addEventListener('click', function() {
+//     fishSound.currentTime = 0;
+//     fishSound.play();
     
+//     gsap.timeline()
+//         .to(fish, {
+//             rotation: 360,
+//             duration: 1,
+//             ease: "power1.inOut"
+//         })
+//         .to(fish, {
+//             x: 20,
+//             duration: 0.5,
+//             ease: "power1.out"
+//         })
+//         .to(fish, {
+//             x: 0,
+//             duration: 0.5,
+//             ease: "power1.in"
+//         });
+// });
+         
+    
+
 
 // Закрытие при клике вне модального окна
 window.onclick = function(event) {
@@ -260,6 +286,7 @@ window.onclick = function(event) {
     if (event.target == modal6) {
         modal6.style.display = "none";
     }
+    
 }
 
     });

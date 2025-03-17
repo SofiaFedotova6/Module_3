@@ -87,7 +87,7 @@ body {
   left: 83vw; 
 }
 
-#Fish {
+#fish {
   position: relative;
   top: -45vw;
   left: 37vw;
@@ -95,6 +95,8 @@ body {
   height: 10vw;
   cursor: pointer; /* чтобы указать, что элемент кликабельный */
 }
+
+
 #Orange {
   width: 1vw;
   height: 1vw;
@@ -138,10 +140,10 @@ body {
   background-image: url("../images/info6.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 30vw auto;
+  margin: 10vw auto;
   padding: 2vw;
-  width: 55vw;
-  height: 28vw;
+  width: 45vw;
+  height: 23vw;
   text-align: center;
 }
 /* модальное окно для бычка */
@@ -149,10 +151,10 @@ body {
   background-image: url("../images/info1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 30vw auto;
+  margin: 10vw auto;
   padding: 2vw;
-  width: 60vw;
-  height: 36vw;
+  width: 43vw;
+  height: 26vw;
   text-align: center;
 }
 /* модальное окно для оленя */
@@ -160,10 +162,10 @@ body {
   background-image: url("../images/info3.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 30vw auto;
+  margin: 8vw auto;
   padding: 2vw;
-  width: 40vw;
-  height: 33vw;
+  width: 37vw;
+  height: 30vw;
   text-align: center;
 }
 /* модальное окно для коричневого зайца */
@@ -171,21 +173,21 @@ body {
   background-image: url("../images/info5.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 30vw auto;
+  margin: 9vw auto;
   padding: 2vw;
-  width: 40vw;
-  height: 33vw;
+  width: 38vw;
+  height: 31vw;
   text-align: center;
 }
-/* модальное окно для коричневого зайца */
+/* модальное окно для лягушки */
 .fifth_modal_content{
   background-image: url("../images/info7.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 30vw auto;
+  margin: 10vw auto;
   padding: 2vw;
-  width: 60vw;
-  height: 33vw;
+  width: 43vw;
+  height: 23vw;
   text-align: center;
 }
 /* модальное окно для оранжевой рыбы */
@@ -193,10 +195,10 @@ body {
   background-image: url("../images/info8.svg"); 
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 30vw auto;
+  margin: 10vw auto;
   padding: 2vw;
-  width: 55vw; 
-  height: 28vw; 
+  width: 41vw; 
+  height: 21vw; 
   text-align: center;
 }
 /* модальное окно для кролика русалки */
@@ -204,9 +206,9 @@ body {
   background-image: url("../images/info2.svg"); 
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 30vw auto;
+  margin: 8vw auto;
   padding: 2vw;
-  width: 55vw; 
-  height: 44vw; 
+  width: 43vw; 
+  height: 33vw; 
   text-align: center;
 }
