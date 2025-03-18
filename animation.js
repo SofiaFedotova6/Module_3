@@ -239,29 +239,30 @@ span7.onclick = function() {
                 ease: "bounce.out"
             });
 
-//  // Анимация и звук для рыбы
-// const fish = document.getElementById("Fish");
-// fish.addEventListener('click', function() {
-//     fishSound.currentTime = 0;
-//     fishSound.play();
+
+ // Анимация и звук для рыбы
+ const fish = document.getElementById("fish");
+ fish.addEventListener('click', function() {
+     fishSound.currentTime = 0;
+     fishSound.play();
     
-//     gsap.timeline()
-//         .to(fish, {
-//             rotation: 360,
-//             duration: 1,
-//             ease: "power1.inOut"
-//         })
-//         .to(fish, {
-//             x: 20,
-//             duration: 0.5,
-//             ease: "power1.out"
-//         })
-//         .to(fish, {
-//             x: 0,
-//             duration: 0.5,
-//             ease: "power1.in"
-//         });
-// });
+    gsap.timeline()
+        .to(fish, {
+            rotation: 360,
+            duration: 1,
+            ease: "power1.inOut"
+        })
+        .to(fish, {
+            x: 20,
+            duration: 0.5,
+            ease: "power1.out"
+        })
+        .to(fish, {
+            x: 0,
+            duration: 0.5,
+            ease: "power1.in"
+        });
+});
          
     
 
