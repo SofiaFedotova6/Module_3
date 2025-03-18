@@ -95,8 +95,6 @@ body {
   height: 10vw;
   cursor: pointer; /* чтобы указать, что элемент кликабельный */
 }
-
-
 #Orange {
   width: 1vw;
   height: 1vw;
@@ -121,9 +119,40 @@ body {
   left: 10vw; 
 }
 
+#mouse{
+  position: relative;
+  top: -80vw;
+  left: 20vw;
+  width: 17vw;
+  height: 17vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */ 
+}
+#Purple{
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -90vw; 
+  left: 36vw; 
+}
+
+#Red{
+  position: relative;
+  top: -125vw;
+  left: 8vw;
+  width: 13vw;
+  height: 13vw;
+  cursor: pointer; /* чтобы указать, что элемент кликабельный */
+}
+#Orange2{
+  width: 1vw;
+  height: 1vw;
+  position: relative;
+  top: -135vw; 
+  left: 11vw; 
+}
 
 /* модальное окошко */
-.first_modal, .second_modal, .third_modal, .fourth_modal, .fifth_modal, .sixth_modal, .seventh_modal  {
+.first_modal, .second_modal, .third_modal, .fourth_modal, .fifth_modal, .sixth_modal, .seventh_modal, .eight_modal  {
   display: none; 
   position: fixed;
   z-index: 1;
@@ -211,4 +240,26 @@ body {
   width: 43vw; 
   height: 33vw; 
   text-align: center;
+}
+/* модальное окно для мышки */
+.eight_modal_content{
+  background-image: url("../images/info4.svg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10vw auto;
+  padding: 2vw;
+  width: 41vw; 
+  height: 21vw; 
+  text-align: center; 
+}
+/* модальное окно для рыбы второй */
+.night_modal_content{
+  background-image: url("../images/info9.svg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10vw auto;
+  padding: 2vw;
+  width: 41vw; 
+  height: 21vw; 
+  text-align: center; 
 }
