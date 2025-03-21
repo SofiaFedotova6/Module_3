@@ -78,13 +78,53 @@
           </div>
         </div>
 
-        <div class="Fish_red"><img id="Red" src="images/Fish.svg" alt=""></div> 
+        <div class="Fish_red"><img id="fish2" src="images/Fish.svg" alt=""></div> 
         <div class="OrangeContainer2"><img id="Orange2" src="images/Orange2.svg" alt=""></div>
         <div id="night_modal" class="night_modal">
             <div class="night_modal_content">
               <span class="close">&times;</span>
             </div>
           </div>
+        </section>
+
+         
+
+            <!-- экран для мобильных устройств -->
+      <section class="adaptive">
+        <div class="rect"><img src="./images/Group 1060.svg" alt="" /></div>
+      </section>
       
+      <script>
+        // Функция для определения и переключения контента при изменении ориентации
+        function handleOrientationChange() {
+            const animalSection = document.querySelector('.animal');
+            const adaptiveSection = document.querySelector('.adaptive');
+            
+            if (window.matchMedia("(orientation: portrait)").matches) {
+                // Если портретная ориентация - показываем Group 1060
+                animalSection.style.display = 'none';
+                adaptiveSection.style.display = 'block';
+            } else {
+                // Если альбомная ориентация - показываем секцию с животными
+                animalSection.style.display = 'block';
+                adaptiveSection.style.display = 'none';
+                
+                // Запускаем анимации, если они есть
+                if (typeof startAnimations === 'function') {
+                    startAnimations();
+                }
+            }
+        }
+    
+        // Проверяем ориентацию при загрузке страницы
+        window.addEventListener('DOMContentLoaded', handleOrientationChange);
+        
+        // Слушаем изменения ориентации
+        window.addEventListener('orientationchange', handleOrientationChange);
+        
+        // Дополнительный слушатель для подстраховки, т.к. orientationchange не всегда срабатывает корректно
+        window.addEventListener('resize', handleOrientationChange);
+    </script>
+    
 </body>
 </html>

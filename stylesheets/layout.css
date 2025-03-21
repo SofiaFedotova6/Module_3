@@ -135,7 +135,7 @@ body {
   left: 36vw; 
 }
 
-#Red{
+#fish2{
   position: relative;
   top: -125vw;
   left: 8vw;
@@ -152,7 +152,7 @@ body {
 }
 
 /* модальное окошко */
-.first_modal, .second_modal, .third_modal, .fourth_modal, .fifth_modal, .sixth_modal, .seventh_modal, .eight_modal  {
+.first_modal, .second_modal, .third_modal, .fourth_modal, .fifth_modal, .sixth_modal, .seventh_modal, .eight_modal, .night_modal {
   display: none; 
   position: fixed;
   z-index: 1;
@@ -259,7 +259,49 @@ body {
   background-size: cover;
   margin: 10vw auto;
   padding: 2vw;
-  width: 41vw; 
-  height: 21vw; 
+  width: 31.5vw; 
+  height: 24.5vw; 
   text-align: center; 
+}
+/* экран для мобьных устройств */
+.adaptive {
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  display: none;
+}
+.rect {
+  width: 38vw;
+  height: 5.4vw;
+  border: 2px solid black;
+  background-color: white;
+}
+.rect p {
+  margin-top: 1vw;
+  text-align: center;
+}
+
+/* По умолчанию скрываем секцию с животными на мобильных устройствах */
+@media screen and (max-width: 767px) and (orientation: portrait) {
+  .animal {
+      display: none;
+  }
+  .adaptive {
+      display: block;
+  }
+}
+
+/* При горизонтальной ориентации показываем секцию с животными */
+@media screen and (orientation: landscape) {
+  .animal {
+      display: block;
+  }
+  .adaptive {
+      display: none;
+  }
 }

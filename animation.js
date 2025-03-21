@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
         fish: new Audio('sounds/fish.mp3'),
         rabbit1: new Audio('sounds/rabbit1.mp3'),
         mouse: new Audio('sounds/mouse.mp3'),
-        fish_red: new Audio('sounds/fish_red.mp3')
+        fish2: new Audio('sounds/fish2.mp3')
     };
 
     // Анимации и звуки
@@ -58,6 +58,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }},
         { id: "Bull_yellow", sound: "bull", anim: bull => {
             gsap.timeline()
+            .to(bull, { scale: 1.2, duration: 0.4 })
+            .to(bull, { scale: 1, duration: 0.6, ease: "elastic.out(1, 0.6)" })
                 .to(bull, { y: -30, duration: 0.3 })
                 .to(bull, { y: 0, duration: 0.5, ease: "bounce.out" });
         }},
@@ -87,6 +89,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 .to(rabbit1, { y: -50, scale: 1.1, duration: 0.4 })
                 .to(rabbit1, { y: 0, scale: 1, duration: 0.5, ease: "bounce.out" });
         }},
+        { id: "fish2", sound: "fish2", anim: fish2 => {
+            gsap.timeline()
+                .to(fish2, { rotate: 40, duration: 0.5 })
+                .to(fish2, { rotate: -40, duration: 0.5 })
+                .to(fish2, { rotate: 0, duration: 0.5 });
+        }},
+        
         { id: "mouse", sound: "mouse", anim: mouse => {
             gsap.timeline()
                 .to(mouse, { y: -50, scale: 1.1, duration: 0.5 })
